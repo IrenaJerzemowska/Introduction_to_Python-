@@ -1,1 +1,105 @@
 
+#napisz powitanie 'witaj "janie" w jezyku python
+imie = input()
+print(f'Witaj "{imie}" w języku Python!!!')
+
+#Napisz program, który pobierze od użytkownika imię oraz liczbę rzeczywistą określający jego zarobki.
+name=input()
+salary = float(input())
+print(name+":",format(2*salary,'.2f'))
+
+#Napisz program, który pobierze dwie liczby całkowite a
+ i b
+ od użytkownika, a następnie wyświetli (każdy w osobnej linii) wartość: dodawanie, odejmowanie, mnozenie, potege, dzielenie z reszta i dzielenie bez reszty
+ a = int(input())
+b = int(input())
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(a**b)
+print(a//b)
+print(a%b)
+
+#Napisz program, który wyświetli następujący tekst:
+print("Poniedziałek|Wtorek|Środa|Czwartek|Piątek|Sobota|Niedziela")
+print(58*"-")
+print("|",9*" ","|",4*" ","|",3*" ","|",6*" ","|",4*" ","|",4*" ","|",7*" ","|")
+print("|",9*" ","|",4*" ","|",3*" ","|",6*" ","|",4*" ","|",4*" ","|",7*" ","|")
+print("|",9*" ","|",4*" ","|",3*" ","|",6*" ","|",4*" ","|",4*" ","|",7*" ","|")
+print("|",9*" ","|",4*" ","|",3*" ","|",6*" ","|",4*" ","|",4*" ","|",7*" ","|")
+print("|",9*" ","|",4*" ","|",3*" ","|",6*" ","|",4*" ","|",4*" ","|",7*" ","|")
+print(58*"-")
+
+#Napisz program, który pobierze od użytkownika trzycyfrową liczbę naturalną i wypisze sumę jej cyfr.
+number = input()
+first = number[0]
+second = number[1]
+third = number[2]
+
+print(int(number[0])+int(number[1])+int(number[2]))
+
+#Napisz program, który pobierze od użytkownika liczbę rzeczywistą, a następnie wypisze jej część ułamkową.
+number = float(input())
+
+integer = int(number)
+#musimy zrobic operację, która polega na tym, że od liczby z ułamkiem po przecinku odejmiemy te liczbe bez ułamka
+operation = number-integer
+#funkcja format czyli 2 miejsca po przecinku
+operat = format(operation,'.2')
+oper = str(operat)
+#jezeli miejsce po przecinku to zero to dokonaj operacji
+if oper.endswith('.0'):
+print(int(operation))
+#jezeli nie to wtedy dawaj to gdzie sie daje dwa miejsca po przecinku czyli czesc ulamkowa
+else:
+print(operat)
+
+#Napisz program, który pobierze od użytkownika liczbę rzeczywistą, a następnie wyświetli pierwszą cyfrę po przecinku.
+
+number = float(input())
+#nalezy pamiętac ze odwoluje sie do zmiennej number w integer a nie do inputu
+integer_num = int(number)
+
+operation = number - integer_num
+oper = str(operation)
+#dwa miejsca po przecinku
+print(oper[2])
+
+#Napisz program, ktory wyswietli 5 liczb zmiennoprzecinkowym w taki sposob, z beda mialy 2 miejsca po przecinku 
+
+n1 = float(input())
+n2 = float(input())
+n3 = float(input())
+n4 = float(input())
+n5 = float(input())
+print(format(n1,'7.2f'))
+print(format(n2,'7.2f'))
+print(format(n3,'7.2f'))
+print(format(n4,'7.2f'))
+print(format(n5,'7.2f'))
+
+#Napisz program, który pobierze 5 słów oraz wypisze je w następujący sposób: slowo, slowo1, slowo2, slowo3, slowo4
+
+word1 = str(input())
+word2 = str(input())
+word3 = str(input())
+word4 = str(input())
+word5 = str(input())
+print(word1, word2, word3, word4, word5)
+
+#Napisz program, który pobierze pięć słów, a następnie wyświetli je w następujący sposób: slowo1;slowo2;slowo3;slowo4;slowo5
+
+word1 = str(input())
+word2 = str(input())
+word3 = str(input())
+word4 = str(input())
+word5 = str(input())
+print(f'{word1};{word2};{word3};{word4};{word5}')
+
+#Napisz program, który pobierze slowo, liczbe i separator i napisze ala|ala|ala
+word = str(input())
+number = int(input())
+sep = "|"
+
+
